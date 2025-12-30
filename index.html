@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luca Sumitra | Growth Systems & Regenerative Culture</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=JetBrains+Mono:wght@300&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              obsidian: '#0E0E0E',
+              bone: '#F4F1EC',
+              gold: '#C6A15B',
+              forest: '#1F3D2B',
+              clay: '#9B6B4A',
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              serif: ['Playfair Display', 'serif'],
+              mono: ['JetBrains Mono', 'monospace'],
+            },
+            spacing: {
+              '128': '32rem',
+              '160': '40rem',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      * {
+        cursor: none !important;
+      }
+      body {
+        transition: background-color 0.8s ease, color 0.8s ease;
+      }
+      .scroll-reveal {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: all 1.2s cubic-bezier(0.22, 1, 0.36, 1);
+      }
+      .scroll-reveal.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      .forest-glow {
+        filter: blur(80px);
+        opacity: 0.15;
+      }
+      @media (max-width: 768px) {
+        * {
+          cursor: auto !important;
+        }
+      }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+    "framer-motion": "https://esm.sh/framer-motion@^11.0.0"
+  }
+}
+</script>
+</head>
+<body class="bg-obsidian text-bone font-sans selection:bg-gold selection:text-obsidian overflow-x-hidden">
+    <div id="root"></div>
+</body>
+</html>
